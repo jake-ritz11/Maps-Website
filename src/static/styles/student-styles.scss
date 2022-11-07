@@ -1,0 +1,127 @@
+/* Add your own styles here. Use of this file should be minimized at all costs. However, if you feel the need to
+    declare your own CSS classes for a small padding fix or whatnot, this is the purpose of this file. You may be
+    tempted to go all out with the styling of your website. We encourage you not to spend the time styling the pages
+    for this class, and to spend that time on styling of your own personal webpage or side project.
+ */
+
+ .filterSearchOptions > *{
+     margin-bottom:100px;
+ }
+ 
+ .distances{
+    background-color:#95afc0;
+     height:37px;
+     position:absolute;
+     text-align: center;
+     border-bottom: 1px solid rgb(196, 196, 196);
+     
+ }
+    .invdividualDistance{
+      margin-bottom:-10px;
+      left:50%;
+      transform:translateX(-50%);
+      width:200vw;
+    }
+    .draggedDistance{
+        height: 0px;
+    }
+        .distancesContainer{
+            color:#130f40;
+            position:absolute;
+            left:50%;
+            transform:translate(-50%);
+            justify-content: center;
+            display:flex;
+            align-items: center;
+            height:37px;
+        }
+        
+ .tableRow{
+     padding-top:2.5px;
+     max-width:100vw;
+ }
+    .notSelected:hover{
+         background-color: rgb(218, 218, 218)!important;
+    }
+    .notSelected{
+        background-color:rgb(241, 241, 241)!important;
+    }
+    .selectedPlace{
+        background-color:rgb(163, 163, 163)!important;
+    }
+
+    .tripNumber{
+        padding:10px;
+        margin-right:20px;
+        padding-left:12.5px;
+        max-width:10px!important;
+    }
+    .tripDetails{
+        padding-right:0px!important;
+        width:calc(60vw - 120px)!important;
+        max-width: 1800px;
+    }
+    .tripIcons{
+        display:float;
+        right:0px;
+        width:160px!important;
+        padding: 0px !important;
+        padding-top:10px!important;
+        margin:0px!important;
+    }
+
+.unitContainer{
+    min-width:150px;
+}
+
+.buttonGroup{
+    margin-bottom:10px;
+}
+.mapCollapse{
+    position:sticky;
+    top:10px;
+    z-index:500;
+}
+   
+
+
+
+
+/*
+body::-webkit-scrollbar {
+    width: 15px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:    #1E4D2B    
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: white;    
+    border-radius: 5px;     
+    border:3px solid   #1E4D2B
+  }*/
+.glowingDot{
+    position:absolute;
+    width:10px;
+    height:10px;
+    content:'';
+    border-radius: 50%;
+    background-color: rgb(21, 255, 0);
+    z-index: 20000;
+    top:1px;
+    left:1px;
+    animation:pulsing 4s;
+    animation-iteration-count: infinite;
+}
+    @keyframes pulsing {
+        0%{
+            opacity:1;
+        }
+        50%{
+           opacity:.5;
+        }
+        100%{
+            opacity: 1;
+        }
+    }

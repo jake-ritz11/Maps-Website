@@ -1,0 +1,14 @@
+.deleteTripContainer{
+    margin:auto;
+    padding:5px;
+    border:2px solid red;
+    width:80%;
+
+    border-radius: 5px;
+
+
+}
+.dangerZone{
+    font-weight: 500;
+    transform:translateX(50px)
+}
